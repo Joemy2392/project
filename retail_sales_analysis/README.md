@@ -57,7 +57,7 @@ Full ETL SQL is in [`docs/02_etl_olap_schema.md`](docs/02_etl_olap_schema.md).
 
 Power BI Desktop connects directly to `retail_olap` via a MySQL connector. The model is set up as a star schema with single-direction, one-to-many relationships from each dimension to `fact_sales`.
 
-![Dashboard](dashboard/powerbi_dashboard.png)
+![Dashboard](dashboard/retail_sales_dashboard.png)
 
 **KPI cards:** Total Customers, Total Quantity Sold, Total Sales, Average Order Value
 **Visuals:** Top 10 products by sales, sales by country (map), monthly/yearly sales trend, top 10 customers, sales by category (donut)
