@@ -83,7 +83,7 @@ DAX measures and visual configuration are documented in [`docs/03_powerbi_dashbo
 3. In Power BI Desktop, connect to `retail_olap` via **Get Data → MySQL database**, load the four tables, and set up the relationships as shown in the OLAP diagram above.
 4. Add the DAX measures listed in `docs/03_powerbi_dashboard.md` and build the visuals.
 
-## Notes and Known Limitations
+## Notes
 
 - The **Average Order Value** measure is defined in this project as `Total Sales / Total Customers` (i.e., average revenue per customer), not `Total Sales / number of orders`, which is the more conventional definition of AOV. This is noted here so the metric isn't misread — see `docs/03_powerbi_dashboard.md` for detail.
 - `dim_date` is populated only with dates that appear in the `orders` table, not a full continuous calendar; date gaps outside the order history won't appear in `dim_date`.
