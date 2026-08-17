@@ -41,7 +41,7 @@ The project covers three stages:
 
 A normalized transactional schema with four tables: `customers`, `products`, `orders`, `order_items`. Referential integrity is enforced with foreign keys (`orders.customer_id → customers`, `order_items.order_id → orders`, `order_items.product_id → products`).
 
-![OLTP ERD](erd/oltp_erd.png)
+![OLTP ERD](retail_sales_analysis_erd/oltp_erd.png)
 
 Full DDL and `LOAD DATA INFILE` scripts are in [`docs/01_oltp_schema.md`](docs/01_oltp_schema.md).
 
