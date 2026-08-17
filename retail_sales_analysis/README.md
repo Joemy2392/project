@@ -41,7 +41,7 @@ The project covers three stages:
 
 A normalized transactional schema with four tables: `customers`, `products`, `orders`, `order_items`. Referential integrity is enforced with foreign keys (`orders.customer_id → customers`, `order_items.order_id → orders`, `order_items.product_id → products`).
 
-![OLTP ERD](erd/oltp_erd.png)
+![OLTP ERD](erd/retail_sales_oltp_erd.png)
 
 Full DDL and `LOAD DATA INFILE` scripts are in [`docs/01_oltp_schema.md`](docs/01_oltp_schema.md).
 
@@ -49,7 +49,7 @@ Full DDL and `LOAD DATA INFILE` scripts are in [`docs/01_oltp_schema.md`](docs/0
 
 The OLTP tables are transformed into a star schema using SQL `INSERT ... SELECT` statements: three dimension tables (`dim_customers`, `dim_products`, `dim_date`) and one fact table (`fact_sales`) that references them by surrogate keys.
 
-![OLAP Star Schema](erd/olap_erd.png)
+![OLAP Star Schema](erd/retail_sales_olap_erd.png)
 
 Full ETL SQL is in [`docs/02_etl_olap_schema.md`](docs/02_etl_olap_schema.md).
 
